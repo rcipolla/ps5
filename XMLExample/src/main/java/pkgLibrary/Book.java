@@ -29,6 +29,7 @@ public class Book{
 
 	}
 	
+	// TESTS ONLY WORK WHEN RUN ON PC! DOESN'T WORK FOR MAC
 	
 	// write Book constructor that passes in id
 	public Book(String id) throws BookException {
@@ -43,7 +44,7 @@ public class Book{
 		Book answer = null;
 		
 		for (Book e : booksbase) {
-			if (e.getId() == id) {
+			if (e.getId().equals(id)) {
 				answer = e;
 			}
 		}
